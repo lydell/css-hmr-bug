@@ -1,0 +1,12 @@
+html {
+  /* Changing the color here should hot-reload CSS. */
+  /* But when css-modules is enabled the whole page is reloaded. */
+  background-color: red;
+}
+
+/* Commenting out this line makes CSS HMR work even if css-modules is enabled. */
+.test {
+  color: blue;
+}
+/* But if you uncomment it again, the CSS is _always_ hot-reloaded until you
+/* reload the page!  */
