@@ -1,15 +1,22 @@
 html {
   /* Changing the color here should hot-reload CSS. */
-  /* But when css-modules is enabled the whole page is reloaded. */
-  background-color: red;
+  background-color: green;
 }
 
-/* Commenting out this rule makes CSS HMR work even if css-modules is enabled. */
+/* Commenting out this rule should reload the page. */
+/* Also try adding it back. */
+/* Also try renaming the class. */
 .test {
   /* Changing the colors here should hot-reload CSS. */
-  /* But again, when css-modules is enabled the whole page is reloaded. */
-  background-color: blue;
+  background-color: red;
   color: white;
+  /* Adding a new property should hot-reload CSS. */
+  /* font-weight: bold; */
+  /* Also try removing it again. */
 }
-/* But if you uncomment it again, the CSS is _always_ hot-reloaded until you
-/* reload the page!  */
+
+/* Adding a new class should reload the page. */
+/* Also try removing it again. */
+/* .test2 { */
+/*   color: blue; */
+/* } */
