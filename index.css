@@ -4,9 +4,12 @@ html {
   background-color: red;
 }
 
-/* Commenting out this line makes CSS HMR work even if css-modules is enabled. */
+/* Commenting out this rule makes CSS HMR work even if css-modules is enabled. */
 .test {
-  color: blue;
+  /* Changing the colors here should hot-reload CSS. */
+  /* But again, when css-modules is enabled the whole page is reloaded. */
+  background-color: blue;
+  color: white;
 }
 /* But if you uncomment it again, the CSS is _always_ hot-reloaded until you
 /* reload the page!  */
